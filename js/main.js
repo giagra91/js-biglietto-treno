@@ -13,9 +13,14 @@ console.log(ticketPrice);
 // Condizioni per sconto clienti
 if (age < 18){ // condizione se il cliente è minorenne
     ticketPrice = ((ticketPrice / 100) * 80).toFixed(2);
+    console.log(ticketPrice);
 } else if (age > 65) {  // condizione se il cliente ha più di 65 anni
     ticketPrice = ((ticketPrice / 100) * 60).toFixed(2);
-}
+    console.log(ticketPrice);
+} else { // condizione per tutti gli altri casi
+    ticketPrice = (ticketPrice).toFixed(2);
+    console.log(ticketPrice);
+} 
 
 // Output riguardo la distanza
 document.getElementById("my-distance").innerHTML = distance + " Km";
