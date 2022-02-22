@@ -31,14 +31,22 @@ document.getElementById("my-age").innerHTML = age + " anni";
 // Output riguardo il prezzo del biglietto
 document.getElementById("my-ticket-price").innerHTML = `Il cliente ha ${age} anni, quindi il prezzo è ${ticketPrice} €`;
 
+let errorDistance;
+errorDistance = "Il valore riferito alla distanza è errato";
+
+let errorAge;
+errorAge = "Il valore riferito all'età è errato";
+
 if (isNaN(distance) ){
     console.log(`Il valore della distanza inserito è errato!`);
+    alert(errorDistance);
 } else {
     console.log(`Il valore è ${distance} Km`);
 }
 
 if (isNaN(age) ){
     console.log(`Il valore riferito all'età inserito è errato!`);
+    alert(errorAge);
 } else {
     console.log(`Il valore è ${age} anni`);
 }
