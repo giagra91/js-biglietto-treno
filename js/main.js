@@ -17,10 +17,13 @@ if (age < 18){ // condizione se il cliente è minorenne
 } else if (age > 65) {  // condizione se il cliente ha più di 65 anni
     ticketPrice = ((ticketPrice / 100) * 60).toFixed(2);
     console.log(`Il cliente ha più di 65 anni quindi paga € ` + ticketPrice);
-} else { // condizione per tutti gli altri casi
+} else if (age <= 65){ // condizione per tutti gli altri casi
     ticketPrice = (ticketPrice).toFixed(2);
     console.log(`Il cliente ha tra i 18 e i 65 anni quindi paga il prezzo pieno`);
-} 
+} else {
+    ticketPrice = (ticketPrice).toFixed(2);
+    console.log(`Il valore è errato!`)
+}
 
 // Output riguardo la distanza
 document.getElementById("my-distance").innerHTML = distance + " Km";
