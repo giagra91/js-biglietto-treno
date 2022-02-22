@@ -22,7 +22,6 @@ if (age < 18){ // condizione se il cliente è minorenne
     console.log(`Il cliente ha tra i 18 e i 65 anni quindi paga il prezzo pieno`);
 } else {
     ticketPrice = (ticketPrice).toFixed(2);
-    console.log(`Il valore è errato!`)
 }
 
 // Output riguardo la distanza
